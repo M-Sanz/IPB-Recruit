@@ -1,0 +1,64 @@
+{
+    "name": "northwestern-sysdev/dynamic-forms",
+    "description": "Dynamic Forms for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "dynamic forms",
+        "form.io",
+        "laravel forms"
+    ],
+    "authors": [
+        {
+            "name": "Nick Evans",
+            "email": "nick.evans@northwestern.edu"
+        },
+        {
+            "name": "Saood Karim",
+            "email": "saood.karim@northwestern.edu"
+        }
+    ],
+    "require": {
+        "php": "^8",
+        "aws/aws-sdk-php": "^3.80",
+        "illuminate/support": "^8|^9",
+        "illuminate/validation": "^8|^9",
+        "illuminate/contracts": "^8|^9",
+        "illuminate/http": "^8|^9",
+        "symfony/finder": "^6",
+        "nesbot/carbon": "^2",
+        "jwadhams/json-logic-php": "^1.4",
+        "lodash-php/lodash-php": "^0.0.7",
+        "me-io/php-lodash": "^2.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7",
+        "phpunit/phpunit": "^9",
+        "php-coveralls/php-coveralls": "^2.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Northwestern\\SysDev\\DynamicForms\\": "src/",
+            "Northwestern\\SysDev\\DynamicForms\\Tests\\Components\\TestCases\\": "tests/Components/TestCases"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Northwestern\\SysDev\\DynamicForms\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Northwestern\\SysDev\\DynamicForms\\DynamicFormsProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "@php ./vendor/bin/testbench package:discover --ansi"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
