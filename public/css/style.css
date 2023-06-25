@@ -78,9 +78,9 @@
 }
 
 .ngembang {
-    transition: 0.8s;
+    transition: 0.5s;
 }
 
 .ngembang:hover {
-    transform: scale(1.1);
+    transform: scale(1.07);
 }

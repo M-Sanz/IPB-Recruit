@@ -12,7 +12,7 @@
         <div class="container " style="margin-top: 15%">
             <div class="row justify-content-center d-flex" >
                 <div class="col-md-6 p-3 justify-content-end d-flex" >
-                    <div class="card d-inline-block border-primary ngembang" style="width: 18rem;cursor: pointer;"  onclick="location.href='register/organisasi'">
+                    <div class="card d-inline-block border-primary ngembang" style="width: 18rem;cursor: pointer;"  onclick="location.href='register/mahasiswa'">
                         <div class="card-body p-7" for="mahasiswa" style="text-align: center">
                           <h1 class="card-title text-center">Mahasiswa</h1>
                           <a href="register/mahasiswa" class="card-link" id="mahasiswa" style="margin: auto">Register as Student</a>

@@ -11,12 +11,12 @@
                 <img src="{{ asset('storage/' . $post->image) }}" class="img-fluid" alt="{{ $post->title }}">
                 </div>
                 @endif
-                <article class="my-2">
+                <article class="my-2 mb-4">
                     {!! $post->body !!}
                 </article>
 
-                <div style="background-color: #682B57; width : 50%; padding:10px; border-radius:30px; text-align:center;height:3em;line-height:1.5em;cursor:pointer" onclick="location.href='/{{$post->slug}}/daftar'" class="ngembang">
-                    <a href="/{{$post->slug}}/daftar" style="color:white;text-decoration:none;font-size:1.5em;">Daftar Sebagai Pengurus</a>
+                <div style="background-color: #682B57; width : 40%; padding:10px; border-radius:30px; text-align:center;height:3em;line-height:1.5em;cursor:pointer" onclick="location.href='/{{$post->slug}}/daftar'" class="ngembang">
+                    <a href="/{{$post->slug}}/daftar" style="color:white;text-decoration:none;font-size:1.2em;">Daftar Sebagai Pengurus</a>
                 </div>
                 
             </div>

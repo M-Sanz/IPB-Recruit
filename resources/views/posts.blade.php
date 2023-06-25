@@ -14,7 +14,7 @@
                 <a class=" text-decoration-none heading2" href="/organisasi/{{ $post->slug }}">{{ $post->title }}</a>
               </div>    
               <div class="daftar_btn mt-3 ngembang" onclick="location.href='/{{$post->slug}}/daftar'" style="cursor: pointer">
-                <a class=" text-decoration-none heading2" href="/{{$post->slug}}/daftar">Daftar</a>
+                <a class="text-decoration-none heading2" href="/{{$post->slug}}/daftar">Daftar</a>
               </div>    
             @endforeach
         </div>
